@@ -30,7 +30,9 @@ class LoginRequest extends FormRequest
     public function messages()
     {
         return [
-            'email.required' => "Le champ email est obligatoire"
+            'email.required' => "Le champ email est obligatoire",
+            "password.required" => "Le mot de passe est obligatoire",
+            "email.exists" => "Cet utilisateur n'existe pas !"
         ];
     }
 }

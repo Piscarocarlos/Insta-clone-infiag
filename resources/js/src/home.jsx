@@ -1,8 +1,11 @@
 import React from 'react'
+import MainWrapper from '../components/main-wrapper'
 
 function Home() {
     return (
-        <div>Home</div>
+        <MainWrapper>
+            Mon profil
+        </MainWrapper>
     )
 }
 

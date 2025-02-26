@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SettingController;
 use Illuminate\Support\Facades\Route;
 
 // auth : permet de vérifier si la personne est authentifé
@@ -14,5 +15,6 @@ Route::middleware("guest")->group(function () {
 
 Route::middleware("auth")->group(function () {
     Route::get('/', [AppController::class, 'index'])->name("home");
+    Route::get('/settings', [SettingController::class, 'index'])->name("settings.index");
 
 });

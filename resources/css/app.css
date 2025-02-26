@@ -3,3 +3,8 @@
 *, ::after, ::before {
     font-family: "DM Sans", sans-serif;
 }
+
+
+a:hover {
+    color: red !important;
+}
